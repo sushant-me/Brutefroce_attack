@@ -1,0 +1,83 @@
+Password Brute Force Demonstration - Information File
+====================================================
+
+How It Works
+-----------
+This educational tool demonstrates how brute force attacks work by:
+
+1. Generating all possible character combinations
+2. Systematically trying each combination
+3. Tracking attempts and time elapsed
+4. Displaying the cracking process in real-time
+
+Technical Specifications:
+- Character set: A-Z, a-z, 0-9 (62 possible characters)
+- Max password length: 4 characters (for demo purposes)
+- Total possible combinations: 14,776,336 (62^4)
+- Demo limited to 4 chars to prevent browser freezing
+
+Key Features:
+----------------
+🔓 Educational brute force demonstration
+⏱️ Real-time attempt counter
+⏲️ Time elapsed tracking
+🚦 Visual progress indicators
+📊 Attempts-per-second calculation
+📋 Display of attempted combinations
+
+Security Notes:
+---------------
+⚠️ This is for EDUCATIONAL PURPOSES ONLY
+⚠️ Runs 100% in your browser
+⚠️ No passwords are sent to servers
+⚠️ All processing happens locally
+⚠️ Never use this for unauthorized testing
+
+Usage Instructions:
+-------------------
+1. Enter a test password (1-4 alphanumeric chars)
+2. Click "Start Attack" to begin demonstration
+3. View real-time cracking progress
+4. See statistics and attempted combinations
+5. Click "Stop" to halt the demonstration
+
+For Developers:
+---------------
+Files included:
+- index.html (Main application structure)
+- styles.css (All styling and layout)
+- script.js (Brute force algorithm and UI logic)
+- info.txt (This file)
+
+Implementation Details:
+-----------------------
+Algorithm:
+- Recursive combination generator
+- Odometer-style character incrementing
+- Asynchronous UI updates
+
+Performance:
+- Throttled UI updates for smooth performance
+- Limited to 4 characters for demo stability
+- Efficient stat tracking
+
+Customization Options:
+----------------------
+1. Change max password length in script.js
+2. Modify character set in script.js
+3. Adjust UI update frequency
+4. Change color scheme in styles.css
+
+Educational Value:
+------------------
+Demonstrates:
+- Importance of password length
+- Exponential time complexity
+- Why complex passwords matter
+- Brute force attack mechanics
+
+Warning:
+--------
+THIS TOOL IS FOR LEGAL, EDUCATIONAL USE ONLY.
+UNAUTHORIZED PASSWORD CRACKING IS ILLEGAL.
+USE ONLY ON PASSWORDS YOU OWN OR HAVE PERMISSION TO TEST.

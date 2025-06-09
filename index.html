@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Brute Force Demo</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>🔓 Password Brute Force Demo</h1>
+
+      <div class="warning">
+        ⚠️ WARNING: For educational purposes only. Never use brute force attacks
+        without authorization.
+      </div>
+
+      <div class="input-section">
+        <label for="password"
+          >Enter a password (letters and digits only, max 4 chars):</label
+        >
+        <input
+          type="text"
+          id="password"
+          maxlength="4"
+          pattern="[A-Za-z0-9]*"
+          required
+        />
+        <small>Note: Limited to 4 characters for performance reasons.</small>
+      </div>
+
+      <button id="startBtn" class="btn-attack">🚀 Start Attack</button>
+      <button id="stopBtn" class="btn-stop" disabled>⏹ Stop</button>
+
+      <div class="stats-section">
+        <div class="stat-card">
+          <div class="stat-value" id="attemptsStat">0</div>
+          <div class="stat-label">Attempts</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value" id="timeStat">0.00s</div>
+          <div class="stat-label">Time</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value" id="speedStat">0/s</div>
+          <div class="stat-label">Speed</div>
+        </div>
+      </div>
+
+      <div class="result-section">
+        <h2>🔍 Results</h2>
+        <div class="result-container">
+          <div id="currentAttempt" class="current-attempt">
+            Ready to start...
+          </div>
+          <div id="result" class="result-output"></div>
+        </div>
+      </div>
+
+      <div class="combinations-section">
+        <h3>🔄 Attempted Combinations</h3>
+        <div id="combinations" class="combinations-list"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
